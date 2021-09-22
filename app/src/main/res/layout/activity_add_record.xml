@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddRecordActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_text"
+        android:text="Person Information"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/personImage"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/display_text"
+        android:padding="2dp"
+        android:src="@drawable/ic_add_photo"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personName"
+        android:layout_below="@+id/personImage"
+        android:hint="Enter your name"
+        android:inputType="textPersonName|textCapWords"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personAge"
+        android:layout_below="@+id/personName"
+        android:hint="Enter your age"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/personPhone"
+        android:layout_below="@+id/personAge"
+        android:hint="Enter your phone"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addButton"
+        android:layout_below="@+id/personPhone"
+        android:layout_centerHorizontal="true"
+        android:text="Add Info"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background"
+        />
+
+</RelativeLayout>
